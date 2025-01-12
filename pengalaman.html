@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Aldi - Pengalaman</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" href="images/aic.png">
+</head>
+
+<header class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center py-4">
+        <img src="images/logocv.png" alt="Website Logo" class="w-10 h-10 mr-4"> 
+      <div class="hidden md:flex space-x-8 dark:text-black">
+        <a href="index.html" class="hover:bg-gray-200">Tentang</a>
+        <a href="pengalaman.html" class="hover:bg-gray-200">Pengalaman</a>
+        <a href="keahlian.html" class="hover:bg-gray-200">Keahlian</a>
+      </div>
+      <button id="hamburgerButton" class="md:hidden">
+        <img src= "images/hamburger.png" class="mx-2 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      </img>
+      </button>
+    </div>
+  </header>
+
+  <div id="mobileMenu" class=" hidden fixed top-8 left-0 right-0 bottom-8 z-10 bg-white">
+    <div class="py-4 ">
+      <div class="flex justify-end px-4 ">
+        <button id="closeButton">
+          <img src="images/close.png" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        </img>
+        </button>
+      </div>
+      <img src="images/logocv.png" alt="Website Logo" class="w-10 h-10 ml-2 "> 
+      <div class="mt-4 dark:text-black">
+        <a href="index.html" class="block py-2 px-4 hover:bg-gray-200">Tentang</a>
+        <a href="pengalaman.html" class="block py-2 px-4 hover:bg-gray-200">Pengalaman</a>
+        <a href="keahlian.html" class="block py-2 px-4 hover:bg-gray-200">Keahlian</a>
+      </div>
+    </div>
+  </div>
+
+  <body class="bg-gray-100 text-gray-800 font-sans">
+    <header class="bg-blue-600 text-white py-8 flex items-center">
+        <img src="images/1gw.jpg" class="w-32 h-32 rounded-full ml-4">
+        <div class="pl-6">
+            <h1 class="text-4xl font-bold">Aldiansyah</h1>
+            <p class="text-lg mt-2">Mikrotik | Cisco | Video Editing</p>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 lg:px-8 py-6">
+     <div id="skills" class="mb-8">
+        <h2 class="text-2xl font-bold border-b-2 border-blue-600 pb-2">Pengalaman</h2>
+        <ul class="mt-4 list-disc list-inside">
+          <li>
+              <strong>Asisten - Guest Teacher Mikrotik</strong> (2024)
+              <p class="text-sm text-gray-600">Dokumentasi kegiatan dan membantu pertanyaan murid murid yang mengalami kesulitan dalam
+                menyelesaikan konfigurasi</p>
+          </li>
+          <li>
+              <strong>Sharing - Berbagi Ilmu Mikrotik</strong> (2024-sekarang)
+              <p class="text-sm text-gray-600">Sharing ilmu mikrotik kepada murid pkl didalam kampus.</p>
+          </li>
+          <li>
+              <strong>PKL - PT.SARANA KENTJANA INDO</strong> (2022)
+              <p class="text-sm text-gray-600">Praktek kerja lapangan sebagai assy/dibagian perakitan komponen kecil dalam produk.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Aldi. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburgerButton = document.getElementById('hamburgerButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeButton = document.getElementById('closeButton');
+        const icon = document.getElementById('icon');
+        const websiteIcon = document.getElementById('websiteIcon');
+    
+        hamburgerButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          icon.classList.toggle('hidden');
+          websiteIcon.classList.toggle('hidden');
+        });
+    
+        closeButton.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          icon.classList.remove('hidden'); 
+          websiteIcon.classList.add('hidden');
+        });
+    </script>
+</body>
+</html>
