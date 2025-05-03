@@ -1,4 +1,4 @@
 # tailwind-uas-aldi
 
 ## domain name:
-cvaldi.my.id
+https://www.cvaldi.my.id
